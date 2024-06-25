@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="bg-gray-800">
+    <nav
+      class="grid grid-cols-12 pt-4 px-4 grid-rows-2 sm:grid-rows-1 text-white mb-4"
+    >
+      <div class="relative col-span-12 sm:col-span-10">
+        <input
+          id="search"
+          class="bg-gray-600 rounded-full focus:w-full pl-10 p-1"
+          type="search"
+          placeholder="Search"
+        />
+        <img
+          class="w-5 absolute left-3 top-1.5"
+          src="images/search.png"
+          alt=""
+        />
+      </div>
+      <div
+        class="flex justify-center w-fit col-span-12 sm:col-span-2 col-start-6 pt-2 relative"
+      >
+        <span class="w-fit"
+          ><img class="w-10" src="images/cart-shopping-solid (1).svg" alt=""
+        /></span>
+        <span
+          id="cart-el"
+          class="bg-red-700 text-center text-xs h-fit absolute -top-3 -right-4 w-6 rounded-full p-1"
+          >0</span
+        >
+      </div>
+    </nav>
+    <main class="grid grid-cols-12 text-white h-fit">
+      <div class="bg-gray-600 mb-5 px-4 col-span-12 sm:col-span-3">
+        <h1>Filters</h1>
+        <h2>Category</h2>
+        <ul id="filter-container">
+          <li>
+            <input type="checkbox" name="cameras" />
+            <label for="cameras"> Cameras</label>
+          </li>
+          <li>
+            <input type="checkbox" name="smartphones" />
+            <label for="smartphones"> Smartphones</label>
+          </li>
+          <li>
+            <input type="checkbox" name="games" />
+            <label for="games"> Games</label>
+          </li>
+          <li>
+            <input type="checkbox" name="televisions" />
+            <label for="televisions"> Television</label>
+          </li>
+        </ul>
+      </div>
+      <div
+        id="product-container"
+        class="col-span-12 grid grid-cols-12 px-4 sm:col-span-9 justify-around gap-4 md:gap-6"
+      ></div>
+    </main>
+  </body>
+</html>
+
+<!-- SWRITTEN BY COLLINS -->
